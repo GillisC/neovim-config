@@ -31,4 +31,5 @@ return require('packer').startup(function(use)
   }
   use "williamboman/mason-lspconfig.nvim" -- Bridges Mason with LSP
   use "L3MON4D3/LuaSnip"
+  use 'davidgranstrom/nvim-markdown-preview'
 end)
