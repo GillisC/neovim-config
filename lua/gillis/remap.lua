@@ -12,3 +12,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "Q", "<nop>")
 
+vim.keymap.set("n", "<leader>t", "<Cmd>rightbelow vsplit | terminal<CR> | i", { noremap = true, silent = true })
+
+-- nvim-tree
+vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
