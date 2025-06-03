@@ -10,7 +10,9 @@ require("mason-lspconfig").setup {
 
 --require("lspconfig").lua_ls.setup {}
 require("lspconfig").ruff.setup {}
-require("lspconfig").clangd.setup {}
+require("lspconfig").clangd.setup {
+    cmd = { "clangd", "--compile-commands-dir=build" }
+}
 require("lspconfig").pyright.setup {}
 
 
