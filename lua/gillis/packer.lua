@@ -57,4 +57,11 @@ return require('packer').startup(function(use)
             require("nvim-surround").setup({})
         end,
     })
+    use({
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function ()
+            require("nvim-autopairs").setup {}
+        end
+    })
 end)
